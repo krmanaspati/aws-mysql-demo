@@ -1,0 +1,21 @@
+server:
+  port: 5000
+
+---
+spring:
+  application:
+    name: MYSQL_DEMO_AWS
+
+---
+spring:
+  datasource:
+    url: jdbc:mysql://awseb-e-mgfa59r6wg-stack-awsebrdsdatabase-6u3kmufztmbi.cy8dnvehlqdq.us-east-1.rds.amazonaws.com:3306/userdb  # URL of your MySQL database
+    username: root                      # Username to access the database
+    password: rootroot                     # Password to access the database
+    driver-class-name: com.mysql.cj.jdbc.Driver  # MySQL driver class
+  jpa:
+    hibernate:
+      ddl-auto: update                           # Hibernate's behavior for creating, updating, or validating the database schema
+    database-platform: org.hibernate.dialect.MySQL8Dialect  # MySQL dialect for Hibernate
+    show-sql: true
+
