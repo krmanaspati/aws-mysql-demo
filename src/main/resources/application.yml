@@ -9,7 +9,7 @@ spring:
 ---
 spring:
   datasource:
-    url: jdbc:mysql://awseb-e-mgfa59r6wg-stack-awsebrdsdatabase-6u3kmufztmbi.cy8dnvehlqdq.us-east-1.rds.amazonaws.com:3306/userdb  # URL of your MySQL database
+    url: jdbc:mysql://userdb.cy8dnvehlqdq.us-east-1.rds.amazonaws.com:3306/userdb  # URL of your MySQL database
     username: root                      # Username to access the database
     password: rootroot                     # Password to access the database
     driver-class-name: com.mysql.cj.jdbc.Driver  # MySQL driver class
